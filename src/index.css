@@ -7,10 +7,9 @@ body{
 }
 /* Introduction Section */
 .introductionWrapper{
-    cursor:pointer;
-
+    cursor:default;
     padding-left:15%;
-    transition: 1s;
+    transition: 2s;
 }
 .title{
     font-size: 9vw;
@@ -34,8 +33,27 @@ body{
 }
 
 
-/* Carousel Section */
+/* Carousels Section */
+.carouselsWrapper{
+    display:grid;
+    grid-template-areas: 'side1 side2'
+                         'side1 side3'
+    ;
+
+}
 .carouselStyle{
     border:solid;
-    border-top: none;
+}
+.side1{
+    align-self: center;
+    height: 50%;
+    grid-area: side1;
+    border-right:0;
+}
+.side2{
+    grid-area: side2;
+    border-bottom: 0;
+}
+.side3{
+    grid-area: side3;
 }

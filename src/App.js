@@ -31,15 +31,36 @@ return(
     </div>
     
 
+    <div className="carouselsWrapper">
+        <Carousel className="carouselStyle side1">
+            <Carousel.Item>
+                <img className="d-block w-100" src={Nashetampicho} alt="first"></img>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img className="d-block w-100" src={Nashetampicho} alt="second"></img>
+            </Carousel.Item>
+       </Carousel>
 
-    <Carousel className="carouselStyle">
-        <Carousel.Item>
-            <img className="d-block w-100" src={Nashetampicho} alt="first"></img>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img className="d-block w-100" src={Nashetampicho} alt="second"></img>
-        </Carousel.Item>
-    </Carousel>
+        <Carousel className="carouselStyle side2">
+            <Carousel.Item>
+                <img className="d-block w-100 " src={Nashetampicho} alt="first"></img>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img className="d-block w-100" src={Nashetampicho} alt="second"></img>
+            </Carousel.Item>
+        </Carousel>
+
+        <Carousel className="carouselStyle side3">
+            <Carousel.Item>
+                <img className="d-block w-100" src={Nashetampicho} alt="first"></img>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img className="d-block w-100" src={Nashetampicho} alt="second"></img>
+            </Carousel.Item>
+        </Carousel>
+
+    </div>
+    
 
 
 </div>
