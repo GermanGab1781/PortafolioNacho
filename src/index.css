@@ -39,6 +39,7 @@ body{
     grid-template-areas: 'side1 side2'
                          'side1 side3'
     ;
+    grid-template-columns: 50% 50%;
 
 }
 .carouselStyle{
