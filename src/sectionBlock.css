@@ -1,0 +1,27 @@
+/* block Style */
+.blockContainer{
+    position:relative;
+    display:inline-block;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    cursor:pointer;
+    border:solid;
+}
+.blockContainer:hover img {
+    transform: scale(150%);
+}
+.blockTitle{
+    position:absolute;
+    color:white;
+    font-size: 2vw;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.bgImg{
+    height: 15vw;
+    width: fit-content;
+    transition:1s;
+}
