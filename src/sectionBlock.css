@@ -7,7 +7,7 @@
     height: fit-content;
     overflow: hidden;
     cursor:pointer;
-    border:solid;
+    border-radius: 80%;
 }
 .blockContainer:hover img {
     transform: scale(150%);

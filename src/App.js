@@ -8,6 +8,7 @@ function App(){
 const Nashetampicho = Companchiro;
 return(
 <div>
+    {/*
     <Navbar bg="dark" variant="dark">
         <Container fluid >
             <Navbar.Brand className="navFonts">COMPANCHIRO</Navbar.Brand>
@@ -18,6 +19,12 @@ return(
             </Nav>
         </Container>
     </Navbar>
+    */}
+
+    <div className="navbar">
+        <div className="navButton">Mis trabajos </div>
+        <div className="navButton">Contacto</div>      
+    </div>
 
     <div className="introductionWrapper">
         <span className="title">Nacho Garcia</span><br></br>
@@ -25,12 +32,11 @@ return(
     </div>
     
     <div className="sectionsWrapper">
-        <SectionBlock bgImg={Nashetampicho} title="Bodas" description="XD"/>
-        <SectionBlock bgImg={Nashetampicho} title="Arte" description="XD"/>
-        <SectionBlock bgImg={Nashetampicho} title="Equipo" description="XD"/>
+        <SectionBlock bgImg={Nashetampicho} title="Filmmaking" description="XD"/>
+        <SectionBlock bgImg={Nashetampicho} title="Fotografia" description="XD"/>
     </div>
     
-
+    {/*
     <div className="carouselsWrapper">
         <Carousel className="carouselStyle side1">
             <Carousel.Item>
@@ -60,7 +66,7 @@ return(
         </Carousel>
 
     </div>
-    
+    */}
 
 
 </div>
