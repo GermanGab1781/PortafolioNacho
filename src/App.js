@@ -1,75 +1,14 @@
-import {Container, Carousel, Navbar, Nav } from "react-bootstrap";
-import SectionBlock from "./components/SectionBlock";
-import Companchiro from './imgEj.jpg';
-import './index.css';
-import './sectionBlock.css';
+import { BrowserRouter} from "react-router-dom";
+import './index.css'
+import Navbar from "./components/Navbar";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App(){
-const Nashetampicho = Companchiro;
 return(
-<div>
-    {/*
-    <Navbar bg="dark" variant="dark">
-        <Container fluid >
-            <Navbar.Brand className="navFonts">COMPANCHIRO</Navbar.Brand>
-            <Nav className="navFonts">
-                <Nav.Link>Home</Nav.Link>
-                <Nav.Link>Photos</Nav.Link>
-                <Nav.Link>Contact me</Nav.Link>
-            </Nav>
-        </Container>
-    </Navbar>
-    */}
-
-    <div className="navbar">
-        <div className="navButton">Mis trabajos </div>
-        <div className="navButton">Contacto</div>      
-    </div>
-
-    <div className="introductionWrapper">
-        <span className="title">Nacho Garcia</span><br></br>
-        <span className="subtitle">Fotografia</span>
-    </div>
-    
-    <div className="sectionsWrapper">
-        <SectionBlock bgImg={Nashetampicho} title="Filmmaking" description="XD"/>
-        <SectionBlock bgImg={Nashetampicho} title="Fotografia" description="XD"/>
-    </div>
-    
-    {/*
-    <div className="carouselsWrapper">
-        <Carousel className="carouselStyle side1">
-            <Carousel.Item>
-                <img className="d-block w-100" src={Nashetampicho} alt="first"></img>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img className="d-block w-100" src={Nashetampicho} alt="second"></img>
-            </Carousel.Item>
-       </Carousel>
-
-        <Carousel className="carouselStyle side2">
-            <Carousel.Item>
-                <img className="d-block w-100 " src={Nashetampicho} alt="first"></img>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img className="d-block w-100" src={Nashetampicho} alt="second"></img>
-            </Carousel.Item>
-        </Carousel>
-
-        <Carousel className="carouselStyle side3">
-            <Carousel.Item>
-                <img className="d-block w-100" src={Nashetampicho} alt="first"></img>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img className="d-block w-100" src={Nashetampicho} alt="second"></img>
-            </Carousel.Item>
-        </Carousel>
-
-    </div>
-    */}
-
-
-</div>
+<BrowserRouter>
+    <Navbar/>
+    <AnimatedRoutes/>
+</BrowserRouter>
 )
 }
 export default App;

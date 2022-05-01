@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import '../sectionBlock.css';
 
 export default function SectionBlock({bgImg , title, description}) {
   return (

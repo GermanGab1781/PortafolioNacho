@@ -1,5 +1,5 @@
 body{
-    background-color: #000;
+    background-color:maroon;
 }
 /* NavBar Section */
 .navFonts{
@@ -19,6 +19,7 @@ body{
     padding:0.2vw;
     transition:0.5s;
     margin-right: 1vw;
+    text-decoration: none;
 }
 .navButton:hover{
     color:whitesmoke;
@@ -26,6 +27,9 @@ body{
     transition:0.5s;
     transform:scale(130%);
 }
+
+
+
 /* Introduction Section */
 .introductionWrapper{
     cursor:default;
