@@ -23,5 +23,6 @@
 .bgImg{
     height: 15vw;
     width: fit-content;
-    transition:1s;
+    transition: 1s;
+    
 }

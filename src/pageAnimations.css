@@ -1,0 +1,13 @@
+/* HomePage Section */
+.HomePageWrapper{
+    display:grid;
+    grid-template-areas: 'Intro '
+                         'Sections '   
+    ;
+
+}
+
+/* FotografiaPage Section */
+.FotografiaPageWrapper{
+    color:white;
+}

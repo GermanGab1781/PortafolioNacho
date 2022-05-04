@@ -1,14 +1,10 @@
 body{
-    background-color:maroon;
+    background-color:#000;
 }
 /* NavBar Section */
-.navFonts{
-    font-size: 2vw;
-}
 .navbar{
-    position:absolute;
-    right: 0.1vw;
-    top:0.1vw;
+    position:sticky;
+    justify-content: right;
 }
 .navButton{
     cursor:pointer;
@@ -28,15 +24,10 @@ body{
     transform:scale(130%);
 }
 
-
-
 /* Introduction Section */
 .introductionWrapper{
     cursor:default;
-    margin-top:3vw;
-    margin-bottom: 2vw;
-    padding-left:15%;
-    transition: 2s;
+    grid-area: Intro;
 }
 .title{
     font-size: 9vw;
@@ -47,17 +38,13 @@ body{
     padding-left:15%;
     color:grey;
 }
-.introductionWrapper:hover{
-    padding-left: 25%;
-    transition: 1s;
-}
 
 /* Sections Section XDD */
 .sectionsWrapper{
+    grid-area: Sections;
     display:grid;
     grid-template-columns: auto auto;
     justify-content: space-evenly;
-
 }
 
 
