@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/PortafolioNacho/static/css/main.c07333f2.css",
-    "main.js": "/PortafolioNacho/static/js/main.6ddc7e1c.js",
+    "main.css": "/PortafolioNacho/static/css/main.e13543c8.css",
+    "main.js": "/PortafolioNacho/static/js/main.01999c34.js",
+    "static/media/imgEj2.jpg": "/PortafolioNacho/static/media/imgEj2.d9649ba719c87a81191c.jpg",
     "static/media/imgEj.jpg": "/PortafolioNacho/static/media/imgEj.b13e05278540fe3ee819.jpg",
     "index.html": "/PortafolioNacho/index.html",
-    "main.c07333f2.css.map": "/PortafolioNacho/static/css/main.c07333f2.css.map",
-    "main.6ddc7e1c.js.map": "/PortafolioNacho/static/js/main.6ddc7e1c.js.map"
+    "main.e13543c8.css.map": "/PortafolioNacho/static/css/main.e13543c8.css.map",
+    "main.01999c34.js.map": "/PortafolioNacho/static/js/main.01999c34.js.map"
   },
   "entrypoints": [
-    "static/css/main.c07333f2.css",
-    "static/js/main.6ddc7e1c.js"
+    "static/css/main.e13543c8.css",
+    "static/js/main.01999c34.js"
   ]
 }
