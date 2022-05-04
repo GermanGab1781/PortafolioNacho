@@ -1,5 +1,5 @@
 /* block Style */
-.blockContainer{
+.tblockContainer{
     position:relative;
     display:inline-block;
     text-align: center;
@@ -9,24 +9,29 @@
     max-height: 15vw;
     overflow: hidden;
     cursor:pointer;
-    border-radius: 80%;
+    border:solid;
+    border-color: white;
 }
-.blockContainer:hover img {
+.tblockContainer:hover img {
     transform: scale(150%);
 }
-.blockTitle{
+.tblockTitle{
     position:absolute;
     color:white;
     font-size: 2vw;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
+    transition:2s;
 }
-.bgImg{
+.tblockContainer:hover .tblockTitle{
+    font-size:3vw;
+    color:blue;    
+}
+.tbgImg{
     width: 30vw;
     height: 15vw;
     max-width: 30vw;
     max-height: 15vw;
     transition: 1s;
-    
 }

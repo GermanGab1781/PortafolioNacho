@@ -4,7 +4,10 @@ body{
 /* NavBar Section */
 .navbar{
     position:sticky;
+    top:0;
     justify-content: right;
+    z-index: 100;
+    background-color: black;
 }
 .navButton{
     cursor:pointer;
@@ -27,7 +30,7 @@ body{
 /* Introduction Section */
 .introductionWrapper{
     cursor:default;
-    grid-area: Intro;
+    text-align: center;
 }
 .title{
     font-size: 9vw;
@@ -35,40 +38,13 @@ body{
 }
 .subtitle{
     font-size: 7vw;
-    padding-left:15%;
     color:grey;
 }
 
 /* Sections Section XDD */
 .sectionsWrapper{
-    grid-area: Sections;
     display:grid;
     grid-template-columns: auto auto;
     justify-content: space-evenly;
 }
 
-
-/* Carousels Section */
-.carouselsWrapper{
-    display:grid;
-    grid-template-areas: 'side1 side2'
-                         'side1 side3'
-    ;
-    grid-template-columns: 50% 50%;
-}
-.carouselStyle{
-    border:solid;
-}
-.side1{
-    align-self: center;
-    grid-area: side1;
-    border-right:0;  
-    border-color: yellow;
-}
-.side2{
-    grid-area: side2;
-    border-bottom: 0;
-}
-.side3{
-    grid-area: side3;
-}
