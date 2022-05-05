@@ -21,7 +21,10 @@ const Nashetampicho = Companchiro;
             <NavLink to='/PortafolioNacho/Fotografia'>
                 <SectionBlock bgImg={Nashetampicho} title="Fotografia" description="XD"/>
             </NavLink>
-            <SectionBlock bgImg={Rengoku} title="Filmmaking" description="XD"/>
+            <NavLink to='/PortafolioNacho/Filmmaking'>
+                <SectionBlock bgImg={Rengoku} title="Filmmaking" description="XD"/> 
+            </NavLink>
+            
         </div>
 
     </motion.div>

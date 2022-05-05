@@ -1,1 +1,1 @@
-# Portafolio for photograpper Nacho garcia
+# Portafolio for photographer Nacho garcia

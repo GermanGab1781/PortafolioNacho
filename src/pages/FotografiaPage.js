@@ -1,5 +1,4 @@
 import React from 'react';
-import '../fotografiaPage.css';
 import { motion } from 'framer-motion';
 import Companchiro from '../imgEj.jpg';
 import AMUI from '../imgEj2.jpg';

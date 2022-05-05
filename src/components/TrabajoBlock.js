@@ -1,5 +1,3 @@
-import '../trabajoBlock.css';
-
 export default function SectionBlock({bgImg , title, description}) {
   return (
     <div className="tblockContainer">

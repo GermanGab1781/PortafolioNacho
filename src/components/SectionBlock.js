@@ -1,5 +1,3 @@
-import '../sectionBlock.css';
-
 export default function SectionBlock({bgImg , title, description}) {
   return (
     <div className="blockContainer">
