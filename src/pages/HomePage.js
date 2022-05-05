@@ -13,8 +13,8 @@ const Nashetampicho = Companchiro;
     <motion.div initial={{opacity:0}}animate={{opacity:1,transition:{duration:2}}}exit={{opacity:0}}>
 
         <div className="introductionWrapper">
-            <span className="title">Nacho Garcia</span><br></br>
-            <span className="subtitle">Fotografia</span>
+            <span className="titleHome">Nacho Garcia</span><br></br>
+            <span className="subtitleHome">Fotografia</span>
         </div>
         
         <div className="sectionsWrapper">

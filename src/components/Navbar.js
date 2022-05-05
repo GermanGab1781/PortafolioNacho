@@ -9,7 +9,8 @@ export default function Navbar() {
                 animate={{opacity:1,transition:{duration:2}}}
                 exit={{opacity:0}}   
                 className='navbar'>         
-        <NavLink className="navButton" to='/PortafolioNacho/Fotografia'>Mis trabajos </NavLink>
+        <NavLink className="navButton" to='/PortafolioNacho/Fotografia'>Fotografia </NavLink>
+        <NavLink className="navButton" to='/PortafolioNacho/Filmmaking'>Filmmaking </NavLink>
         <NavLink className="navButton" to='/PortafolioNacho'>Home</NavLink>      
     </motion.div>
   )

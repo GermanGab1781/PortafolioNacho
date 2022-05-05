@@ -33,11 +33,11 @@ body{
         cursor:default;
         text-align: center;
     }
-    .title{
+    .titleHome{
         font-size: 9vw;
         color: whitesmoke;
     }
-    .subtitle{
+    .subtitleHome{
         font-size: 7vw;
         color:grey;
     }
@@ -84,13 +84,15 @@ body{
 
 /* Fotografia Page */
     /* Title */
-    .fotografiaTitle{
+    .titleSectionPages{
         display:grid;
+        cursor:default;
         justify-content: center;
         font-size:7vw;
         color:whitesmoke;
     }
     .trabajosTitle{
+        cursor:default;
         margin-left:3vw;
         font-size:4vw;
         color:grey;
@@ -169,3 +171,40 @@ body{
         transition: 1s;
     }
 
+/* Trabajo Ejemplo Page */
+    .trabajoEjWrapper{
+        display:grid;
+        grid-template-areas: 'desc carousel carousel'
+                             'desc carousel carousel'
+                             'imgs imgs imgs'
+        ;
+        margin-top: 1vw;
+    }
+    .trabajoEjDesc{
+        grid-area:desc;
+        color:whitesmoke;
+        font-size: 1.2vw;
+    }
+    .trabajoEjCarousel{
+        grid-area: carousel;
+        max-width: 50vw;
+        max-height: 30vw;
+        margin-right: 2vw;
+    }
+
+    .trabajoEjImgs{
+        margin-top: 2vw;
+        grid-area:imgs;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-evenly;
+    }
+    .trabajoEjImg{
+        cursor:pointer;
+        max-width: 30vw;
+        max-height: 10vw;
+    }
+    .trabajoEjImgFull{
+        max-width: 50vw;
+        max-height: 30vw;
+    }
