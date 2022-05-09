@@ -17,14 +17,11 @@ const ImgEj3 = imgej3 ;
 const ImgEj4 = imgej4 ;
 const ImgEj5 = imgej5 ;
 const ImgEj6 = imgej6 ;
-const loading = (<div className="titleHome">Loading....</div>);
 const imagesToLoad=[ImgEj,ImgEj2,ImgEj3,ImgEj4,ImgEj5,ImgEj6];
 return(
 <Preload
-    loadingIndicator={loading}
     images={imagesToLoad}
     autoResolveDelay={1}
-    resolveOnError={true}
     mountChildren={true}
 >
     <BrowserRouter>
