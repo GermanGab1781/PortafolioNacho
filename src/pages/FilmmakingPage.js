@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Companchiro from '../media/imgEj.jpg';
-import AMUI from '../media/imgEj2.jpg';
+import Companchiro from '../imgEj.jpg';
+import AMUI from '../imgEj2.jpg';
 import { Carousel } from 'react-bootstrap';
 import TrabajoBlock from '../components/TrabajoBlock';
 import { NavLink } from 'react-router-dom';

@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import imgej from '../media/imgEj.jpg';
-import imgej2 from '../media/imgEj2.jpg';
-import imgej3 from '../media/imgEj3.jpg';
-import imgej4 from '../media/imgEj4.png';
-import imgej5 from '../media/imgEj5.jpg';
-import imgej6 from '../media/imgEj6.jpg';
+import imgej from '../imgEj.jpg';
+import imgej2 from '../imgEj2.jpg';
+import imgej3 from '../imgEj3.jpg';
+import imgej4 from '../imgEj4.png';
+import imgej5 from '../imgEj5.jpg';
+import imgej6 from '../imgEj6.jpg';
 import { Carousel } from 'react-bootstrap';
 import TrabajoBlock from '../components/TrabajoBlock';
 import { NavLink } from 'react-router-dom';
