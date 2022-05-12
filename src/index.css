@@ -1,6 +1,27 @@
 body{
     background-color:#000;
 }
+.loading{
+    position:absolute;
+    background-color: #000;
+    color:white;
+    z-index: 99;
+    height: 50vw;
+    width: 98vw;
+    visibility: visible; 
+    opacity:1;
+}
+.finishedLoading{
+    position:absolute;
+    background-color: #000;
+    color:white;
+    z-index: 99;
+    height: 50vw;
+    width: 98vw;
+    visibility: hidden;
+    opacity:0;
+    transition:visibility 0.4s,opacity 0.4s; 
+}
 /* HomePage */
     
     /* Introduction */
@@ -140,9 +161,13 @@ body{
         cursor:pointer;
         border:solid;
         border-color: rgb(90, 87, 87);
+        transition:0.5s;
+    }
+    .tblockContainer:hover{
+        transform:scale(110%);
     }
     .tblockContainer:hover img {
-        transform: scale(150%);
+        transform: scale(120%);
     }
     .tblockTitle{
         white-space: pre;
@@ -152,11 +177,11 @@ body{
         top:50%;
         left:50%;
         transform:translate(-50%,-50%);
-        transition:2s;
+        transition:0.3s;
     }
     .tblockContainer:hover .tblockTitle{
         font-size:3vw;
-        color:blue;    
+        color:red;    
     }
     .tbgImg{
         width: 30vw;

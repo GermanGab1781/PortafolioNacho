@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Companchiro from '../imgEj.jpg';
-import AMUI from '../imgEj2.jpg';
+import Companchiro from '../media/imgEj.jpg';
+import AMUI from '../media/imgEj2.jpg';
 import { Carousel } from 'react-bootstrap';
 import TrabajoBlock from '../components/TrabajoBlock';
 import { NavLink } from 'react-router-dom';
@@ -10,7 +10,7 @@ export default function FilmmakingPage() {
   const Rengoku = AMUI ;
   const Nashetampicho = Companchiro;
     return (
-      <motion.div initial={{opacity:0}}animate={{opacity:1}}exit={{opacity:0}} className="fotografiaPage">  
+      <motion.div initial={{opacity:0,scale:.7}}animate={{opacity:1,scale:1,transition:{duration:1}}}exit={{opacity:0}} className="fotografiaPage">  
       
         <span className="titleSectionPages">Filmmaking</span>
         <span className="trabajosTitle">Trabajos</span>

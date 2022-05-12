@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Carousel } from 'react-bootstrap';
-import Companchiro from '../imgEj.jpg';
-import AMUI from '../imgEj2.jpg';
+import Companchiro from '../media/imgEj.jpg';
+import AMUI from '../media/imgEj2.jpg';
 
 
 export default function TrabajoEjemploPage() {
