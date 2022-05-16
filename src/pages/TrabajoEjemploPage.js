@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { Carousel } from 'react-bootstrap';
 import Companchiro from '../media/imgEj.jpg';
 import AMUI from '../media/imgEj2.jpg';
+import React, {useCallback} from 'react';
+import { FullScreen, useFullScreenHandle } from "react-full-screen";
 
 
 export default function TrabajoEjemploPage() {

@@ -74,9 +74,9 @@ body{
 
 /* NavBar */
     .navbar{
+        justify-content: right;
         position:sticky;
         top:0;
-        justify-content: right;
         z-index: 100;
         background-color: black;
     }
@@ -84,12 +84,29 @@ body{
         cursor:pointer;
         font-size:1.2vw;
         border:solid;
+        border-radius: 7px 7px 7px 7px;
         border-color:rgb(29, 28, 28);
         color:darkgrey;
         padding:0.2vw;
-        transition:0.5s;
-        margin-right: 1vw;
+        transition:0.2s;
+        margin-right: 2vw;
         text-decoration: none;
+    }
+    .navButton.brand{
+        position:absolute;
+        left:1vw;
+    }
+    .navButton.active{
+        color:whitesmoke;
+        border-color:whitesmoke;
+        transition:0.5s;
+        transform:scale(120%);
+    }
+    .navButton.activeBrand{
+        opacity:0;
+    }
+    .navButton.notActive{
+        opacity:1;       
     }
     .navButton:hover{
         color:whitesmoke;
@@ -160,6 +177,7 @@ body{
         overflow: hidden;
         cursor:pointer;
         border:solid;
+        border-radius: 8px 8px 8px 8px;
         border-color: rgb(90, 87, 87);
         transition:0.5s;
     }

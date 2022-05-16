@@ -17,21 +17,22 @@ const ImgEj4 = imgej4 ;
 const ImgEj5 = imgej5 ;
 const ImgEj6 = imgej6 ;
 const variants={
-  hidden:{opacity:1,scale:.7},
-  visible:{opacity:1,scale:1,transition:{duration:2}}
+  hidden:{opacity:0.5,scale:.2},
+  hidden2:{scale:.7},
+  visible:{opacity:1,scale:1,transition:{duration:1}}
 }
 const [show,setShow]= useState(true);
   useEffect(()=>{
-    const timer= setTimeout(()=>{setShow(false);},3000);
+    const timer= setTimeout(()=>{setShow(false);},1500);
     return()=> clearTimeout(timer);
   },[]);
 
   return (   
     <div>  
       <motion.div  animate={{opacity:1}} className={show ? 'loading' : 'finishedLoading' }>
-        ASDOAISDJOIASDJ
+        Cargando
       </motion.div>
-      <motion.div initial="hidden" animate={show ? "hidden" : "visible"} variants={variants}>
+      <motion.div initial="hidden" animate={show ? "hidden2" : "visible"} variants={variants}>
         <span className="titleSectionPages">Fotografia</span>
         <span className="trabajosTitle">Trabajos</span>
         

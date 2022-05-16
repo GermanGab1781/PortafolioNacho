@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Companchiro from '../media/imgEj.jpg';
 import AMUI from '../media/imgEj2.jpg';
-import { Carousel } from 'react-bootstrap';
 import TrabajoBlock from '../components/TrabajoBlock';
 import { NavLink } from 'react-router-dom';
 
@@ -35,27 +34,6 @@ export default function FilmmakingPage() {
             <TrabajoBlock bgImg={Nashetampicho} title={"Cagada a palos"} description={"Boda familia"} /> 
           </NavLink>
         </div>
-        
-        <Carousel className='carouselStyle' fade>
-          <Carousel.Item>
-            <img className='d-block carouselImg' src={Rengoku} alt="ej"></img>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className='d-block carouselImg' src={Nashetampicho} alt="ej"></img>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className='d-block carouselImg' src={Rengoku} alt="ej"></img>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className='d-block carouselImg' src={Nashetampicho} alt="ej"></img>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className='d-block carouselImg' src={Rengoku} alt="ej"></img>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className='d-block carouselImg' src={Nashetampicho} alt="ej"></img>
-          </Carousel.Item>
-        </Carousel>
         
         
       </motion.div>

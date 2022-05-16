@@ -9,9 +9,9 @@ export default function Navbar() {
                 animate={{opacity:1,transition:{duration:2}}}
                 exit={{opacity:0}}   
                 className='navbar'>         
-        <NavLink className="navButton" to='/PortafolioNacho/Fotografia'>Fotografia </NavLink>
-        <NavLink className="navButton" to='/PortafolioNacho/Filmmaking'>Filmmaking </NavLink>
-        <NavLink className="navButton" to='/PortafolioNacho'>Home</NavLink>      
+        <NavLink className={({isActive})=> isActive ? 'navButton active' : 'navButton notActive'} to='/PortafolioNacho/Fotografia'>Fotografia </NavLink>
+        <NavLink className={({isActive})=> isActive ? 'navButton active' : 'navButton notActive'} to='/PortafolioNacho/Filmmaking'>Filmmaking </NavLink>
+        <NavLink className={({isActive})=> isActive ? 'navButton activeBrand brand' : 'navButton notActive brand'} to='/Home'>Inicio</NavLink>      
     </motion.div>
   )
 }
