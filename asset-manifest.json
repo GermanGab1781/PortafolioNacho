@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PortafolioNacho/static/css/main.dccf0174.css",
-    "main.js": "/PortafolioNacho/static/js/main.39138405.js",
+    "main.css": "/PortafolioNacho/static/css/main.18cd0dce.css",
+    "main.js": "/PortafolioNacho/static/js/main.05071c92.js",
     "static/media/imgEj4.png": "/PortafolioNacho/static/media/imgEj4.0f60842036ab1909bdef.png",
     "static/media/imgEj3.jpg": "/PortafolioNacho/static/media/imgEj3.ca9b356978fb60d01633.jpg",
     "static/media/imgEj2.jpg": "/PortafolioNacho/static/media/imgEj2.5f2135183ef99161aeb2.jpg",
@@ -9,11 +9,11 @@
     "static/media/imgEj.jpg": "/PortafolioNacho/static/media/imgEj.81944ae4ac81d13e255c.jpg",
     "static/media/imgEj6.jpg": "/PortafolioNacho/static/media/imgEj6.73805abf11caf2521049.jpg",
     "index.html": "/PortafolioNacho/index.html",
-    "main.dccf0174.css.map": "/PortafolioNacho/static/css/main.dccf0174.css.map",
-    "main.39138405.js.map": "/PortafolioNacho/static/js/main.39138405.js.map"
+    "main.18cd0dce.css.map": "/PortafolioNacho/static/css/main.18cd0dce.css.map",
+    "main.05071c92.js.map": "/PortafolioNacho/static/js/main.05071c92.js.map"
   },
   "entrypoints": [
-    "static/css/main.dccf0174.css",
-    "static/js/main.39138405.js"
+    "static/css/main.18cd0dce.css",
+    "static/js/main.05071c92.js"
   ]
 }
