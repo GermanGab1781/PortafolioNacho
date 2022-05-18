@@ -12,9 +12,9 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
-            <Route path='/Home' element={<HomePage/>}/>
-            <Route path='/PortafolioNacho/Fotografia' element={<FotografiaPage/>}/>
-            <Route path='/PortafolioNacho/Filmmaking' element={<FilmmakingPage/>}/>
+            <Route path='/PortafolioNacho' element={<HomePage/>}/>
+            <Route path='/Fotografia' element={<FotografiaPage/>}/>
+            <Route path='/Filmmaking' element={<FilmmakingPage/>}/>
             <Route path='/PortafolioNacho/TrabajoEjemplo' element={<TrabajoEjemploPage/>}/>
             <Route path='*' element={<NotFoundPage/>}/>
         </Routes>

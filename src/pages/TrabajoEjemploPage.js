@@ -1,14 +1,28 @@
 import { motion } from 'framer-motion';
-import { Carousel } from 'react-bootstrap';
-import Companchiro from '../media/imgEj.jpg';
-import AMUI from '../media/imgEj2.jpg';
-import React, {useCallback} from 'react';
-import { FullScreen, useFullScreenHandle } from "react-full-screen";
+import React, { useState } from 'react';
+import Viewer from 'react-viewer';
+import ReactPlayer from 'react-player';
+
 
 
 export default function TrabajoEjemploPage() {
-  const Rengoku = AMUI ;
-  const Nashetampicho = Companchiro;
+    const imagesUrls = [{src:require("../media/imgEj.jpg"),alt:"bruh"}
+                     ,{src:require("../media/imgEj2.jpg"),alt:"bruh2"}
+                     ,{src:require("../media/imgEj3.jpg"),alt:"bruh3"}
+                     ,{src:require("../media/imgEj4.png"),alt:"bruh4"}
+                     ,{src:require("../media/imgEj5.jpg"),alt:"bruh5"}
+                     ,{src:require("../media/imgEj6.jpg"),alt:"bruh6"}
+                    
+                    ];
+  
+    const [visible, setVisible]= useState(false);
+    const [indexId, setIndexId]= useState(0);
+    function openImgViewer(index){
+      setVisible(true);
+      setIndexId(index);
+    }
+
+
   return (
     <motion.div initial={{opacity:0}}animate={{opacity:1,transition:{duration:2}}}exit={{opacity:0}}>
         <span className="titleSectionPages"> Trabajo Ejemplo</span>
@@ -19,38 +33,28 @@ export default function TrabajoEjemploPage() {
                     desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", 
                     las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, 
                     el cual incluye versiones de Lorem Ipsum.</span>
-            </div>
-            <div className="trabajoEjCarousel">
-                <Carousel className="trabajoEjCarouselStyle"  fade>
-                    <Carousel.Item>
-                    <img className='d-block carouselImg' src={Rengoku} alt="ej"></img>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                    <img className='d-block carouselImg' src={Nashetampicho} alt="ej"></img>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                    <img className='d-block carouselImg' src={Rengoku} alt="ej"></img>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                    <img className='d-block carouselImg' src={Nashetampicho} alt="ej"></img>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                    <img className='d-block carouselImg' src={Rengoku} alt="ej"></img>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                    <img className='d-block carouselImg' src={Nashetampicho} alt="ej"></img>
-                    </Carousel.Item>
-                </Carousel>            
+                    <br/><br/><p className='clickeame'>IMAGENES PANTALLA COMPLETA AL CLICKEARLAS</p>
             </div>
 
+            <div className='trabajoVid'>
+                <ReactPlayer controls="true" width={"35vw"} height={"25vw"} url="https://www.youtube.com/watch?v=Zasx9hjo4WY"/>
+            </div>
+            
             <div className="trabajoEjImgs">
-                <img className="trabajoEjImg" src={Rengoku} alt="XD"/>
-                <img className="trabajoEjImg" src={Companchiro} alt="XD"/>
-                <img className="trabajoEjImg" src={Rengoku} alt="XD"/>
-                <img className="trabajoEjImg" src={Rengoku} alt="XD"/>
+                
+                {imagesUrls.map((img,index)=>{
+                    return(
+                        <img className='trabajoEjImg' onClick={()=>{openImgViewer(index)}} src={img.src} alt={img.alt}/>
+                    )
+                })}
+                
             </div>
         </div>
-
+        
+        <motion.div initial={{opacity:0}} animate={{opacity:1}}>
+            <Viewer visible={visible} activeIndex={indexId} onClose={()=>{setVisible(false);}} images={imagesUrls}/>
+        </motion.div>
+        
         
 
     </motion.div>

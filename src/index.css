@@ -1,6 +1,11 @@
 body{
     background-color:#000;
 }
+.images{
+    max-width: 10vw;
+    max-height: 6vw;
+}
+/*Loading*/
 .loading{
     position:absolute;
     background-color: #000;
@@ -22,6 +27,18 @@ body{
     opacity:0;
     transition:visibility 0.4s,opacity 0.4s; 
 }
+/* Fullscreen */
+.fullscreenClass{
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    z-index: 100;
+}
+
+
+
 /* HomePage */
     
     /* Introduction */
@@ -212,8 +229,8 @@ body{
 /* Trabajo Ejemplo Page */
     .trabajoEjWrapper{
         display:grid;
-        grid-template-areas: 'desc carousel carousel'
-                             'desc carousel carousel'
+        grid-template-areas: 'desc vid vid'
+                             'desc vid vid'
                              'imgs imgs imgs'
         ;
         margin-top: 1vw;
@@ -221,28 +238,28 @@ body{
     .trabajoEjDesc{
         grid-area:desc;
         color:whitesmoke;
-        font-size: 1.2vw;
+        font-size: 1.4vw;
+        padding:5vw 2vw 2vw 2vw;
     }
-    .trabajoEjCarousel{
-        grid-area: carousel;
-        max-width: 50vw;
-        max-height: 30vw;
-        margin-right: 2vw;
+    .trabajoVid{
+        grid-area:vid;
+        padding:2vw;
+    }
+    .clickeame{
+        color:white;
+        font-weight: bolder;
     }
 
     .trabajoEjImgs{
         margin-top: 2vw;
         grid-area:imgs;
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto ;
         justify-content: space-evenly;
+        row-gap: 1vw;
     }
     .trabajoEjImg{
         cursor:pointer;
-        max-width: 30vw;
-        max-height: 10vw;
-    }
-    .trabajoEjImgFull{
-        max-width: 50vw;
-        max-height: 30vw;
+        width: 30vw;
+        height: 17vw;
     }
