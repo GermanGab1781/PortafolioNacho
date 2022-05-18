@@ -9,7 +9,6 @@ body{
 .loading{
     position:absolute;
     background-color: #000;
-    color:white;
     z-index: 99;
     height: 50vw;
     width: 98vw;
@@ -19,7 +18,6 @@ body{
 .finishedLoading{
     position:absolute;
     background-color: #000;
-    color:white;
     z-index: 99;
     height: 50vw;
     width: 98vw;
@@ -27,6 +25,26 @@ body{
     opacity:0;
     transition:visibility 0.4s,opacity 0.4s; 
 }
+.loadingPropsWrapper{
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+.loadingProp{
+    height: 20vw;
+    width: 20vw;
+}
+.loadingText{
+    position:aboslute;
+    top:13vw;
+    left:42vw;
+    font-size:5vw;
+    color:aliceblue;
+    position:absolute;
+    
+}
+
+
 /* Fullscreen */
 .fullscreenClass{
     position:absolute;
