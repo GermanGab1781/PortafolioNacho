@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, MotionConfig } from 'framer-motion';
 import imgej from '../media/imgEj.jpg';
 import imgej2 from '../media/imgEj2.jpg';
 import imgej3 from '../media/imgEj3.jpg';
@@ -29,9 +29,23 @@ const [show,setShow]= useState(true);
 
   return (   
     <div>  
-      <motion.div  animate={{opacity:1}} className={show ? 'loading' : 'finishedLoading' }>
+      <div className={show ? 'loading' : 'finishedLoading' }>
         Cargando
-      </motion.div>
+          <motion.div initial={"hidden"} animate={"visible"} variants={variants}>
+            <TrabajoBlock  bgImg={ImgEj} title={"Cargando..."} description={"Loading prop"}/>
+          </motion.div>
+          <motion.div initial={"hidden"} animate={"visible"} variants={variants}>
+            <TrabajoBlock  bgImg={ImgEj2} title={"Cargando..."} description={"Loading prop"}/>
+          </motion.div>
+          <motion.div initial={"hidden"} animate={"visible"} variants={variants}>
+            <TrabajoBlock  bgImg={ImgEj3} title={"Cargando..."} description={"Loading prop"}/>
+          </motion.div>
+          <motion.div initial={"hidden"} animate={"visible"} variants={variants}>
+            <TrabajoBlock  bgImg={ImgEj4} title={"Cargando..."} description={"Loading prop"}/>
+          </motion.div>
+      </div>
+        
+        
       <motion.div initial="hidden" animate={show ? "hidden2" : "visible"} variants={variants}>
         <span className="titleSectionPages">Fotografia</span>
         <span className="trabajosTitle">Trabajos</span>
