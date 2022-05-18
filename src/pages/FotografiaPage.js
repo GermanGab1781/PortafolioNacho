@@ -24,7 +24,7 @@ const variants={
 }
 const [show,setShow]= useState(true);
   useEffect(()=>{
-    const timer= setTimeout(()=>{setShow(false);},1111110);
+    const timer= setTimeout(()=>{setShow(false);},2500);
     return()=> clearTimeout(timer);
   },[]);
 
