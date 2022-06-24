@@ -1,283 +1,275 @@
-body{
-    background-color:#000;
-}
-.images{
-    max-width: 10vw;
-    max-height: 6vw;
-}
-/*Loading*/
-.loading{
-    position:absolute;
-    background-color: #000;
-    z-index: 99;
-    height: 50vw;
-    width: 98vw;
-    visibility: visible; 
-    opacity:1;
-}
-.finishedLoading{
-    position:absolute;
-    background-color: #000;
-    z-index: 99;
-    height: 50vw;
-    width: 98vw;
-    visibility: hidden;
-    opacity:0;
-    transition:visibility 0.4s,opacity 0.4s; 
-}
-.loadingPropsWrapper{
-    display:grid;
-    grid-template-columns: auto auto;
-    justify-content: space-evenly;
-}
-.loadingProp{
-    height: 20vw;
-    width: 20vw;
-}
-.loadingText{
-    position:aboslute;
-    top:13vw;
-    left:42vw;
-    font-size:5vw;
-    color:aliceblue;
-    position:absolute;
-    
+@font-face {
+  font-family: "NuromBold";
+  src: local("NuromBold"),
+    url("./fonts/Nurom-Bold.ttf") format("truetype");
+  font-weight: bold;
 }
 
+body{
+  background-color:#000;
+  overflow: hidden;
+}
+.images{
+  max-width: 10vw;
+  max-height: 6vw;
+}
 
 /* Fullscreen */
 .fullscreenClass{
-    position:absolute;
-    top:0;
-    bottom: 0;
-    left:0;
-    right:0;
-    z-index: 100;
+  position:absolute;
+  top:0;
+  bottom: 0;
+  left:0;
+  right:0;
+  z-index: 100;
+}
+
+/* HomePage */
+.HomePageWrapper{
+  position:absolute;
+}
+
+/* Introduction */
+.introductionWrapper{
+  display:grid;
+  justify-content: space-evenly; 
+  cursor:default;
+  text-align: center;
+  padding-top:5vw;
+  padding-left:20vw;   
+  transition:1s;          
+}
+.titleHome{
+  font-family: "NouremBold";
+  font-size: 10vw;
+  color: whitesmoke;
+  font-weight: bold;
+}
+.subtitleHome{
+  font-family: "NouremBold";
+  font-size: 5vw;
+  color:grey;
+}
+.backgroundHome{
+  position:absolute;
+  border:solid;
+  border-color:rgb(49, 49, 49);
+  border-radius: 40% 80%;
+  opacity:0.3;
+  top:5vw;
+  right:25vw;
+  left:25vw;
+  z-index: -5;
+  width:50vw;
+  height: 22vw;
+}
+
+/* SectionBlock */
+.blockContainer{
+  position:relative;
+  display:inline-block;
+  text-align: center;
+  width: 30vw;
+  height: 15vw;
+  max-width: 30vw;
+  max-height: 15vw;
+  overflow: hidden;
+  cursor:pointer;
+  border-radius: 80%;
+}
+.blockContainer:hover img {
+  transform: scale(150%);
+}
+.blockTitle{
+  position:absolute;
+  color:white;
+  font-size: 2vw;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.bgImg{
+  width: 30vw;
+  height: 15vw;
+  max-width: 30vw;
+  max-height: 15vw;
+  transition: 1s;       
+}
+
+/* NavBar */
+.navbar{
+  justify-content: right;
+  position:sticky;
+  top:0;
+  z-index: 100;
+  background-color: black;
+}
+.navButton{
+  cursor:pointer;
+  font-size:1.2vw;
+  border:solid;
+  border-radius: 7px 7px 7px 7px;
+  border-color:rgb(29, 28, 28);
+  color:darkgrey;
+  padding:0.2vw;
+  transition:0.2s;
+  margin-right: 2vw;
+  text-decoration: none;
+}
+.navButton.brand{
+  position:absolute;
+  left:1vw;
+}
+.navButton.active{
+  color:whitesmoke;
+  border-color:whitesmoke;
+  transition:0.5s;
+  transform:scale(120%);
+}
+.navButton.activeBrand{
+  opacity:0;
+}
+.navButton.notActive{
+  opacity:1;       
+}
+.navButton:hover{
+  color:whitesmoke;
+  border-color:whitesmoke;
+  transition:0.5s;
+  transform:scale(130%);
+}
+
+/* Fotografia Page */
+/* Title */
+.FotografiaPageWrapper{
+  position:absolute;
+}
+.titleSectionPages{
+  display:grid;
+  cursor:default;
+  justify-content: center;
+  font-size:7vw;
+  color:whitesmoke;
+}
+.trabajosTitle{
+  cursor:default;
+  margin-left:3vw;
+  font-size:4vw;
+  color:grey;
+}
+
+/* Trabajos */
+.trabajosWrapper{
+  display:grid;
+  margin-top: 2vw;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  row-gap: 1vw;
+}
+
+/* Carousels */
+.carouselStyle{
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50vw;
+  max-height: 30vw;
+  margin-top:3vw;
+}
+.carouselImg{
+  width: 50vw;
+  height: 30vw;
+  max-height: 30vw;
 }
 
 
-
-/* HomePage */
-    
-    /* Introduction */
-    .introductionWrapper{
-        cursor:default;
-        position: relative;
-        text-align: center;
-        margin-top:5vw;
-    }
-    .titleHome{
-        font-size: 9vw;
-        color: whitesmoke;
-    }
-    .subtitleHome{
-        font-size: 7vw;
-        color:grey;
-    }
-
-    /* SectionBlock */
-    .blockContainer{
-        position:relative;
-        display:inline-block;
-        text-align: center;
-        width: 30vw;
-        height: 15vw;
-        max-width: 30vw;
-        max-height: 15vw;
-        overflow: hidden;
-        cursor:pointer;
-        border-radius: 80%;
-    }
-    .blockContainer:hover img {
-        transform: scale(150%);
-    }
-    .blockTitle{
-        position:absolute;
-        color:white;
-        font-size: 2vw;
-        top:50%;
-        left:50%;
-        transform:translate(-50%,-50%);
-    }
-    .bgImg{
-        width: 30vw;
-        height: 15vw;
-        max-width: 30vw;
-        max-height: 15vw;
-        transition: 1s;       
-    }
-
-/* NavBar */
-    .navbar{
-        justify-content: right;
-        position:sticky;
-        top:0;
-        z-index: 100;
-        background-color: black;
-    }
-    .navButton{
-        cursor:pointer;
-        font-size:1.2vw;
-        border:solid;
-        border-radius: 7px 7px 7px 7px;
-        border-color:rgb(29, 28, 28);
-        color:darkgrey;
-        padding:0.2vw;
-        transition:0.2s;
-        margin-right: 2vw;
-        text-decoration: none;
-    }
-    .navButton.brand{
-        position:absolute;
-        left:1vw;
-    }
-    .navButton.active{
-        color:whitesmoke;
-        border-color:whitesmoke;
-        transition:0.5s;
-        transform:scale(120%);
-    }
-    .navButton.activeBrand{
-        opacity:0;
-    }
-    .navButton.notActive{
-        opacity:1;       
-    }
-    .navButton:hover{
-        color:whitesmoke;
-        border-color:whitesmoke;
-        transition:0.5s;
-        transform:scale(130%);
-    }
-
-/* Fotografia Page */
-    /* Title */
-    .titleSectionPages{
-        display:grid;
-        cursor:default;
-        justify-content: center;
-        font-size:7vw;
-        color:whitesmoke;
-    }
-    .trabajosTitle{
-        cursor:default;
-        margin-left:3vw;
-        font-size:4vw;
-        color:grey;
-    }
-
-    /* Trabajos */
-    .trabajosWrapper{
-        display:grid;
-        margin-top: 2vw;
-        grid-template-columns: auto auto auto;
-        justify-content: space-evenly;
-        row-gap: 1vw;
-    }
-
-    /* Carousels */
-    .carouselStyle{
-        position:relative;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 50vw;
-        max-height: 30vw;
-        margin-top:3vw;
-    }
-    .carouselImg{
-        width: 50vw;
-        height: 30vw;
-        max-height: 30vw;
-    }
-
-
 /* NotFoundPage */
-    .notFoundWrapper{
-        position: relative;
-        margin:auto;
-        text-align: center;
-        color:white;
-        font-size: 4vw;
-    }
+.notFoundWrapper{
+  position: relative;
+  margin:auto;
+  text-align: center;
+  color:white;
+  font-size: 4vw;
+}
 
 /* TrabajoBlock */
-    .tblockContainer{
-        position:relative;
-        display:inline-block;
-        text-align: center;
-        width: 30vw;
-        height: 15vw;
-        max-width: 30vw;
-        max-height: 15vw;
-        overflow: hidden;
-        cursor:pointer;
-        border:solid;
-        border-radius: 8px 8px 8px 8px;
-        border-color: rgb(90, 87, 87);
-        transition:0.5s;
-    }
-    .tblockContainer:hover{
-        transform:scale(110%);
-    }
-    .tblockContainer:hover img {
-        transform: scale(120%);
-    }
-    .tblockTitle{
-        white-space: pre;
-        position:absolute;
-        color:white;
-        font-size: 2vw;
-        top:50%;
-        left:50%;
-        transform:translate(-50%,-50%);
-        transition:0.3s;
-    }
-    .tblockContainer:hover .tblockTitle{
-        font-size:3vw;
-        color:red;    
-    }
-    .tbgImg{
-        width: 30vw;
-        height: 15vw;
-        max-width: 30vw;
-        max-height: 15vw;
-        transition: 1s;
-    }
+.tblockContainer{
+  position:relative;
+  display:inline-block;
+  text-align: center;
+  width: 30vw;
+  height: 15vw;
+  max-width: 30vw;
+  max-height: 15vw;
+  overflow: hidden;
+  cursor:pointer;
+  border:solid;
+  border-radius: 8px 8px 8px 8px;
+  border-color: rgb(90, 87, 87);
+  transition:0.5s;
+}
+.tblockContainer:hover{
+  transform:scale(110%);
+}
+.tblockContainer:hover img {
+  transform: scale(120%);
+}
+.tblockTitle{
+  white-space: pre;
+  position:absolute;
+  color:white;
+  font-size: 2vw;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  transition:0.3s;
+}
+.tblockContainer:hover .tblockTitle{
+  font-size:3vw;
+  color:red;    
+}
+.tbgImg{
+  width: 30vw;
+  height: 15vw;
+  max-width: 30vw;
+  max-height: 15vw;
+  transition: 1s;
+}
 
 /* Trabajo Ejemplo Page */
-    .trabajoEjWrapper{
-        display:grid;
-        grid-template-areas: 'desc vid vid'
-                             'desc vid vid'
-                             'imgs imgs imgs'
-        ;
-        margin-top: 1vw;
-    }
-    .trabajoEjDesc{
-        grid-area:desc;
-        color:whitesmoke;
-        font-size: 1.4vw;
-        padding:5vw 2vw 2vw 2vw;
-    }
-    .trabajoVid{
-        grid-area:vid;
-        padding:2vw;
-    }
-    .clickeame{
-        color:white;
-        font-weight: bolder;
-    }
+.trabajoEjWrapper{
+  display:grid;
+  grid-template-areas: 'desc vid vid'
+                        'desc vid vid'
+                        'imgs imgs imgs'
+  ;
+  margin-top: 1vw;
+}
+.trabajoEjDesc{
+  grid-area:desc;
+  color:whitesmoke;
+  font-size: 1.4vw;
+  padding:5vw 2vw 2vw 2vw;
+}
+.trabajoVid{
+  grid-area:vid;
+  padding:2vw;
+}
+.clickeame{
+  color:white;
+  font-weight: bolder;
+}
 
-    .trabajoEjImgs{
-        margin-top: 2vw;
-        grid-area:imgs;
-        display: grid;
-        grid-template-columns: auto auto auto ;
-        justify-content: space-evenly;
-        row-gap: 1vw;
-    }
-    .trabajoEjImg{
-        cursor:pointer;
-        width: 30vw;
-        height: 17vw;
-    }
+.trabajoEjImgs{
+  margin-top: 2vw;
+  grid-area:imgs;
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  justify-content: space-evenly;
+  row-gap: 1vw;
+}
+.trabajoEjImg{
+  cursor:pointer;
+  width: 30vw;
+  height: 17vw;
+}

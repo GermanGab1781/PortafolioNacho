@@ -6,21 +6,17 @@ import ReactPlayer from 'react-player';
 
 
 export default function TrabajoEjemploPage() {
-    const imagesUrls = [{src:require("../media/imgEj.jpg"),alt:"bruh"}
-                     ,{src:require("../media/imgEj2.jpg"),alt:"bruh2"}
-                     ,{src:require("../media/imgEj3.jpg"),alt:"bruh3"}
-                     ,{src:require("../media/imgEj4.png"),alt:"bruh4"}
-                     ,{src:require("../media/imgEj5.jpg"),alt:"bruh5"}
-                     ,{src:require("../media/imgEj6.jpg"),alt:"bruh6"}
-                    
+      const imagesUrls = [{}
+                      
+                      
                     ];
-  
-    const [visible, setVisible]= useState(false);
-    const [indexId, setIndexId]= useState(0);
-    function openImgViewer(index){
-      setVisible(true);
-      setIndexId(index);
-    }
+    
+      const [visible, setVisible]= useState(false);
+      const [indexId, setIndexId]= useState(0);
+      function openImgViewer(index){
+        setVisible(true);
+        setIndexId(index);
+      }
 
 
   return (
