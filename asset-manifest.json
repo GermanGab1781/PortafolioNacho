@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/PortafolioNacho/static/css/main.18cd0dce.css",
-    "main.js": "/PortafolioNacho/static/js/main.05071c92.js",
-    "static/media/imgEj4.png": "/PortafolioNacho/static/media/imgEj4.0f60842036ab1909bdef.png",
-    "static/media/imgEj3.jpg": "/PortafolioNacho/static/media/imgEj3.ca9b356978fb60d01633.jpg",
-    "static/media/imgEj2.jpg": "/PortafolioNacho/static/media/imgEj2.5f2135183ef99161aeb2.jpg",
-    "static/media/imgEj5.jpg": "/PortafolioNacho/static/media/imgEj5.7e645755532636447ac9.jpg",
-    "static/media/imgEj.jpg": "/PortafolioNacho/static/media/imgEj.81944ae4ac81d13e255c.jpg",
-    "static/media/imgEj6.jpg": "/PortafolioNacho/static/media/imgEj6.73805abf11caf2521049.jpg",
+    "main.css": "/PortafolioNacho/static/css/main.d0668c18.css",
+    "main.js": "/PortafolioNacho/static/js/main.edf96dd5.js",
+    "static/media/concierto1.jpg": "/PortafolioNacho/static/media/concierto1.d404e1fd55febd199eda.jpg",
+    "static/media/Cultural1.jpg": "/PortafolioNacho/static/media/Cultural1.5f110a0e4963e048412f.jpg",
+    "static/media/boda1.jpg": "/PortafolioNacho/static/media/boda1.c3aa5b956e4b93f36f84.jpg",
+    "static/media/Nurom-Bold.ttf": "/PortafolioNacho/static/media/Nurom-Bold.d7cfebf6fba53bd4e4fb.ttf",
+    "static/media/fotografo.jpg": "/PortafolioNacho/static/media/fotografo.b493869e03b68aa9c9ad.jpg",
     "index.html": "/PortafolioNacho/index.html",
-    "main.18cd0dce.css.map": "/PortafolioNacho/static/css/main.18cd0dce.css.map",
-    "main.05071c92.js.map": "/PortafolioNacho/static/js/main.05071c92.js.map"
+    "main.d0668c18.css.map": "/PortafolioNacho/static/css/main.d0668c18.css.map",
+    "main.edf96dd5.js.map": "/PortafolioNacho/static/js/main.edf96dd5.js.map"
   },
   "entrypoints": [
-    "static/css/main.18cd0dce.css",
-    "static/js/main.05071c92.js"
+    "static/css/main.d0668c18.css",
+    "static/js/main.edf96dd5.js"
   ]
 }
