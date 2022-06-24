@@ -4,7 +4,6 @@ import {AnimatePresence} from 'framer-motion';
 import FotografiaPage from '../pages/FotografiaPage';
 import HomePage from "../pages/HomePage";
 import NotFoundPage from "../pages/NotFoundPage";
-import FilmmakingPage from '../pages/FilmmakingPage';
 import TrabajoEjemploPage from '../pages/TrabajoEjemploPage';
 
 function AnimatedRoutes() {
@@ -14,7 +13,6 @@ function AnimatedRoutes() {
         <Routes location={location} key={location.pathname}>
             <Route path='/PortafolioNacho' element={<HomePage/>}/>
             <Route path='/Fotografia' element={<FotografiaPage/>}/>
-            <Route path='/Filmmaking' element={<FilmmakingPage/>}/>
             <Route path='/PortafolioNacho/TrabajoEjemplo' element={<TrabajoEjemploPage/>}/>
             <Route path='*' element={<NotFoundPage/>}/>
         </Routes>

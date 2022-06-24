@@ -10,7 +10,6 @@ export default function Navbar() {
                 exit={{opacity:0}}   
                 className='navbar'>         
         <NavLink className={({isActive})=> isActive ? 'navButton active' : 'navButton notActive'} to='/Fotografia'>Fotografia </NavLink>
-        <NavLink className={({isActive})=> isActive ? 'navButton active' : 'navButton notActive'} to='/Filmmaking'>Filmmaking </NavLink>
         <NavLink className={({isActive})=> isActive ? 'navButton activeBrand brand' : 'navButton notActive brand'} to='/PortafolioNacho'>Inicio</NavLink>      
     </motion.div>
   )

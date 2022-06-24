@@ -6,7 +6,7 @@ export default function HomePage() {
   const fotografo = Fotografo;
   
   return (
-    <motion.div className="HomePageWrapper" initial={{opacity:0,scale:.6}} animate={{opacity:1,scale:1,transition:{duration:1.7}}}exit={{x:window.innerWidth,transition:{duration:0.3}}}>
+    <motion.div className="HomePageWrapper" initial={{opacity:0,scale:.6}} animate={{opacity:1,scale:1,transition:{duration:1}}}exit={{x:"-100%",transition:{duration:0.3}}}>
         <div className="introductionWrapper">
             <span className="titleHome">Nacho Garcia</span><br></br>
             <span className="subtitleHome">Filmmaker  Fotoperiodista</span>
