@@ -7,10 +7,9 @@
 
 body{
   background-color:#000;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-x:hidden;
+  overflow-y: hidden;
 }
-
 .images{
   max-width: 10vw;
   max-height: 6vw;
@@ -39,7 +38,9 @@ body{
   text-align: center;
   padding-top:5vw;
   padding-left:20vw;   
-  transition:1s;          
+  transition:1s;  
+  cursor:pointer;
+  text-decoration: none;        
 }
 .titleHome{
   font-family: "NouremBold";
@@ -117,6 +118,7 @@ body{
   transition:0.2s;
   margin-right: 2vw;
   text-decoration: none;
+  background-color: #000;
 }
 .navButton.brand{
   position:absolute;
@@ -130,6 +132,7 @@ body{
 }
 .navButton.activeBrand{
   opacity:0;
+  display:none;
 }
 .navButton.notActive{
   opacity:1;       
@@ -141,13 +144,13 @@ body{
   transform:scale(130%);
 }
 
-/* Fotografia Page */
-/* Title */
-.FotografiaPageWrapper{
+/* Trabajos Page */
+.TrabajosPageWrapper{
   position:absolute;
   padding-left: 2vw;
   width:100vw;
 }
+/* Title */
 .titleSectionPages{
   display:grid;
   cursor:default;
@@ -162,13 +165,15 @@ body{
   color:grey;
 }
 
-/* Trabajos */
+/* Trabajos order*/
 .trabajosWrapper{ 
   display:grid;
   margin-top: 2vw;
   grid-template-columns: auto auto auto;
-
   justify-content: space-evenly;
+}
+.filmmaking{
+  grid-template-columns: auto auto;
 }
 
 /* Carousels */
@@ -242,11 +247,15 @@ body{
 }
 
 /* Trabajo Ejemplo Page */
+.TrabajoEjPageWrapper{
+  display:inherit;
+}
 .trabajoEjWrapper{
   display:grid;
   grid-template-areas: 'desc vid vid'
                         'desc vid vid'
                         'imgs imgs imgs'
+                        'backBtn backBtn backBtn'
   ;
   margin-top: 1vw;
 }
@@ -277,4 +286,29 @@ body{
   cursor:pointer;
   width: 30vw;
   height: 17vw;
+}
+.trabajoEjBackButton{
+  grid-area:backBtn;
+  
+  display:flex;
+  margin:auto;
+  justify-content: space-evenly;
+  width:40vw;
+  height:6vw;
+  font-size:2vw;
+  color:rgb(110, 106, 106);
+  padding-top: 1vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  cursor:pointer;
+  border:solid;
+  border-radius: 7px 7px 7px 7px;
+  border-color:rgb(116, 114, 114);
+  text-decoration: none;
+  transition:0.5s;
+}
+.trabajoEjBackButton:hover{
+  color:rgb(160, 140, 140);
+  transform:scale(110%);
+  transition:0.5s;
 }
