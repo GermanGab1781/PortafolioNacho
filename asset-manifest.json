@@ -1,20 +1,26 @@
 {
   "files": {
-    "main.css": "/PortafolioNacho/static/css/main.37f2a01b.css",
-    "main.js": "/PortafolioNacho/static/js/main.d544ec2c.js",
+    "main.css": "/PortafolioNacho/static/css/main.1988da34.css",
+    "main.js": "/PortafolioNacho/static/js/main.5112d7d7.js",
     "static/media/concierto1.jpg": "/PortafolioNacho/static/media/concierto1.d404e1fd55febd199eda.jpg",
+    "static/media/Cultural2.jpg": "/PortafolioNacho/static/media/Cultural2.ce5355e03fddf641a109.jpg",
     "static/media/Cultural1.jpg": "/PortafolioNacho/static/media/Cultural1.5f110a0e4963e048412f.jpg",
+    "static/media/Cultural3.jpg": "/PortafolioNacho/static/media/Cultural3.e0dadcd409e26620aca4.jpg",
+    "static/media/concierto3.jpg": "/PortafolioNacho/static/media/concierto3.43b9d2b6009786521a09.jpg",
     "static/media/Arcane1.jpg": "/PortafolioNacho/static/media/Arcane1.a15710ac7be676593a6a.jpg",
+    "static/media/boda2.jpg": "/PortafolioNacho/static/media/boda2.aa2a114652ecbd453f46.jpg",
+    "static/media/concierto2.jpg": "/PortafolioNacho/static/media/concierto2.9d211bd639ead4af8223.jpg",
     "static/media/boda1.jpg": "/PortafolioNacho/static/media/boda1.c3aa5b956e4b93f36f84.jpg",
     "static/media/Nurom-Bold.ttf": "/PortafolioNacho/static/media/Nurom-Bold.d7cfebf6fba53bd4e4fb.ttf",
+    "static/media/boda3.jpg": "/PortafolioNacho/static/media/boda3.db226244a8c831bcb4dc.jpg",
     "static/media/fotografo.jpg": "/PortafolioNacho/static/media/fotografo.b493869e03b68aa9c9ad.jpg",
     "static/media/Revolucion1.jpg": "/PortafolioNacho/static/media/Revolucion1.db296609754620e4c936.jpg",
     "index.html": "/PortafolioNacho/index.html",
-    "main.37f2a01b.css.map": "/PortafolioNacho/static/css/main.37f2a01b.css.map",
-    "main.d544ec2c.js.map": "/PortafolioNacho/static/js/main.d544ec2c.js.map"
+    "main.1988da34.css.map": "/PortafolioNacho/static/css/main.1988da34.css.map",
+    "main.5112d7d7.js.map": "/PortafolioNacho/static/js/main.5112d7d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.37f2a01b.css",
-    "static/js/main.d544ec2c.js"
+    "static/css/main.1988da34.css",
+    "static/js/main.5112d7d7.js"
   ]
 }
