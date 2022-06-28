@@ -7,8 +7,7 @@
 
 body{
   background-color:#000;
-  overflow-x:hidden;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 .images{
   max-width: 10vw;
@@ -289,7 +288,6 @@ body{
 }
 .trabajoEjBackButton{
   grid-area:backBtn;
-  
   display:flex;
   margin:auto;
   justify-content: space-evenly;
@@ -311,4 +309,10 @@ body{
   color:rgb(160, 140, 140);
   transform:scale(110%);
   transition:0.5s;
+}
+
+.test{
+  max-width: 60vw;
+  max-height: 60vw;
+
 }

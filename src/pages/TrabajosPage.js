@@ -1,11 +1,11 @@
 import { motion} from 'framer-motion';
 import TrabajoBlock from '../components/TrabajoBlock';
-import { NavLink } from 'react-router-dom';
 import BodaThumbnail from '../media/Fotografia/BodaEj/boda1.jpg'
 import CulturalThumbnail from '../media/Fotografia/EventoCulturalEj/Cultural1.jpg'
 import ConciertoThumbnail from '../media/Fotografia/ConciertoEj/concierto1.jpg'
 import ArcaneThumbnail from '../media/Filmmaking/Arcane/Arcane1.jpg'
 import RevolucionThumbnail from '../media/Filmmaking/Revolucion/Revolucion1.jpg'
+import { useState } from 'react';
 export default function TrabajosPage() {
 
 const bodaThumbnail = BodaThumbnail;
@@ -13,29 +13,24 @@ const culturalThumbnail = CulturalThumbnail;
 const conciertoThumbnail = ConciertoThumbnail;
 const arcaneThumbnail = ArcaneThumbnail;
 const revolucionThumbnail = RevolucionThumbnail;
+const [exitAnimation, setExitAnimation] = useState('exitTop');
+const variants ={
+  exitTop:{y:"-200%",transition:{duration:0.4}},
+  exitBottom:{y:"-50%",transition:{duration:0.3}}
+}
 
 return (   
-  <motion.div className="TrabajosPageWrapper" initial={{opacity:0,y:"150%"}} animate={{opacity:1,y:0,transition:{duration:1}}} exit={{y:"-150%",transition:{duration:0.3}}}>
+  <motion.div className="TrabajosPageWrapper" initial={{opacity:0,y:"10%"}} animate={{opacity:1,y:0,transition:{duration:1.2}}} exit={exitAnimation} variants={variants}>
     <span className="trabajosTitle">Fotografia</span>
     <div className="trabajosWrapper">
-      <NavLink to='/TrabajoEjemplo'>  
-        <TrabajoBlock  bgImg={bodaThumbnail} title={"Boda Familia Gonzales"} description={"Boda familia Gonzales"} />
-      </NavLink>
-      <NavLink to='/TrabajoEjemplo'> 
-        <TrabajoBlock  bgImg={culturalThumbnail} title={"Cultura en Oxaca"} description={"Tradicion cultural Oxaca"} />
-      </NavLink>
-      <NavLink to='/TrabajoEjemplo'> 
-        <TrabajoBlock bgImg={conciertoThumbnail} title={"Festival de la Cerveza"} description={"Festival de la cerveza"} />
-      </NavLink>
+        <TrabajoBlock to='/TrabajoEjemplo' setExit={()=>setExitAnimation('exitBottom')} bgImg={bodaThumbnail} title={"Boda Familia Gonzales"} description={"Boda familia Gonzales"} />      
+        <TrabajoBlock to='/TrabajoEjemplo' setExit={()=>setExitAnimation('exitBottom')} bgImg={culturalThumbnail} title={"Cultura en Oxaca"} description={"Tradicion cultural Oxaca"} />       
+        <TrabajoBlock to='/TrabajoEjemplo' setExit={()=>setExitAnimation('exitBottom')} bgImg={conciertoThumbnail} title={"Festival de la Cerveza"} description={"Festival de la cerveza"} />
     </div>
     <span className="trabajosTitle">Filmmaking</span>
-    <div className="trabajosWrapper filmmaking">
-      <NavLink to='/TrabajoEjemplo'>  
-        <TrabajoBlock bgImg={arcaneThumbnail} title={"Arcane"} description={"Miniserie Arcane de Riot Games"} />
-      </NavLink>
-      <NavLink to='/TrabajoEjemplo'> 
-        <TrabajoBlock bgImg={revolucionThumbnail} title={"Revolución"} description={"Pelicula revolucion del procer San Martin"} />
-      </NavLink>
+    <div className="trabajosWrapper filmmaking">      
+      <TrabajoBlock to='/TrabajoEjemplo' setExit={()=>setExitAnimation('exitBottom')} bgImg={arcaneThumbnail} title={"Arcane"} description={"Miniserie Arcane de Riot Games"} />     
+      <TrabajoBlock to='/TrabajoEjemplo' setExit={()=>setExitAnimation('exitBottom')} bgImg={revolucionThumbnail} title={"Revolución"} description={"Pelicula revolucion del procer San Martin"} />
     </div>
   </motion.div>
 )

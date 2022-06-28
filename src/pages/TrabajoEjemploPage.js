@@ -7,7 +7,16 @@ import { NavLink } from 'react-router-dom';
 
 
 export default function TrabajoEjemploPage() {
-  const imagesUrls = [{src:require("../media/fotografo.jpg"),alt:"bruh"}];
+  const imagesUrls = [{src:require("../media/Fotografia/BodaEj/boda1.jpg"),alt:"Imagen de la Boda numero uno"},
+                      {src:require("../media/Fotografia/BodaEj/boda2.jpg"),alt:"Imagen de la Boda numero dos"},
+                      {src:require("../media/Fotografia/BodaEj/boda3.jpg"),alt:"Imagen de la Boda numero tres"},
+                      {src:require("../media/Fotografia/ConciertoEj/concierto1.jpg"),alt:"Imagen del Concierto numero uno"},
+                      {src:require("../media/Fotografia/ConciertoEj/concierto2.jpg"),alt:"Imagen del Concierto numero dos"},
+                      {src:require("../media/Fotografia/ConciertoEj/concierto3.jpg"),alt:"Imagen del Concierto numero tres"},
+                      {src:require("../media/Fotografia/EventoCulturalEj/Cultural1.jpg"),alt:"Imagen del Eventocultural numero uno"},
+                      {src:require("../media/Fotografia/EventoCulturalEj/Cultural2.jpg"),alt:"Imagen del Eventocultural numero dos"},
+                      {src:require("../media/Fotografia/EventoCulturalEj/Cultural3.jpg"),alt:"Imagen del Eventocultural numero tres"},
+  ];
   const [visible, setVisible]= useState(false);
   const [indexId, setIndexId]= useState(0);
   function openImgViewer(index){
@@ -15,11 +24,12 @@ export default function TrabajoEjemploPage() {
     setIndexId(index);
   }
   useEffect(() => {
-    document.body.style.overflowY="visible";
-  }, [])
+    document.body.style.overflowY="scroll";
+  }, [visible])  
+
   
 return (
-  <motion.div className="TrabajoEjPageWrapper" initial={{y:"-100%"}}animate={{y:0}}exit={{opacity:0,transition:{duration:0.2}}}>
+  <motion.div className="TrabajoEjPageWrapper" initial={{y:"-100%"}}animate={{y:0}}exit={{transitionEnd:{display:"none",}}}>
     <span className="titleSectionPages"> Trabajo Ejemplo</span>
     <div className="trabajoEjWrapper">
       <div className="trabajoEjDesc">
@@ -29,24 +39,21 @@ return (
         </span>
         <br/><br/><p className='clickeame'>IMAGENES PANTALLA COMPLETA AL CLICKEARLAS</p>
       </div>
-
       <div className='trabajoVid'>
         <ReactPlayer controls="true" width={"35vw"} height={"25vw"} url="https://www.youtube.com/watch?v=Zasx9hjo4WY"/>
       </div>
-
+      
       <div className="trabajoEjImgs">
         {imagesUrls.map((img,index)=>{
           return(
-            <img className='trabajoEjImg' onClick={()=>{openImgViewer(index)}} src={img.src} alt={img.alt}/>
+            <img key={index} className='trabajoEjImg' onClick={()=>{openImgViewer(index)}} src={img.src} alt={img.alt}/>
           )
         })
         }
       </div>
-      <NavLink onClick={()=>{document.body.style.overflowY="hidden";}} className="trabajoEjBackButton" to="/Trabajos"  >Volver a Trabajos</NavLink>
+      <NavLink onClick={()=>{document.body.style.overflowY="hidden"}} className="trabajoEjBackButton" to="/Trabajos"  >Volver a Trabajos</NavLink>
     </div>
-    <motion.div initial={{opacity:0}} animate={{opacity:1}}>
-      <Viewer visible={visible} activeIndex={indexId} onClose={()=>{setVisible(false);}} images={imagesUrls}/>
-    </motion.div>
+    <Viewer visible={visible} activeIndex={indexId} onClose={()=>setVisible(false)} images={imagesUrls}/>
   </motion.div>
 )
 }
