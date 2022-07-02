@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PortafolioNacho/static/css/main.1988da34.css",
-    "main.js": "/PortafolioNacho/static/js/main.5112d7d7.js",
+    "main.js": "/PortafolioNacho/static/js/main.313a923e.js",
     "static/media/concierto1.jpg": "/PortafolioNacho/static/media/concierto1.d404e1fd55febd199eda.jpg",
     "static/media/Cultural2.jpg": "/PortafolioNacho/static/media/Cultural2.ce5355e03fddf641a109.jpg",
     "static/media/Cultural1.jpg": "/PortafolioNacho/static/media/Cultural1.5f110a0e4963e048412f.jpg",
@@ -17,10 +17,10 @@
     "static/media/Revolucion1.jpg": "/PortafolioNacho/static/media/Revolucion1.db296609754620e4c936.jpg",
     "index.html": "/PortafolioNacho/index.html",
     "main.1988da34.css.map": "/PortafolioNacho/static/css/main.1988da34.css.map",
-    "main.5112d7d7.js.map": "/PortafolioNacho/static/js/main.5112d7d7.js.map"
+    "main.313a923e.js.map": "/PortafolioNacho/static/js/main.313a923e.js.map"
   },
   "entrypoints": [
     "static/css/main.1988da34.css",
-    "static/js/main.5112d7d7.js"
+    "static/js/main.313a923e.js"
   ]
 }
